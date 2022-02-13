@@ -34,15 +34,15 @@ class App extends Component {
             <h1 className='tc'>Loading...</h1> :
             (
                 <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
+                    <h1 className='f2'>RoboFriends</h1>
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
                         <ErrorBoundry>
                             <CardList robots={filteredRobots} />
                         </ErrorBoundry>
                     </Scroll>
-                    <footer className='tc'>
-                        <p className='f6'>	&copy; copyright <a href="https://zingowalker.com">2022 ZingoWalker</a></p>
+                    <footer className='tc f6'>
+                        <p>	&copy; copyright <a href="https://zingowalker.com">2022 ZingoWalker</a></p>
                     </footer>
                 </div>
             )
